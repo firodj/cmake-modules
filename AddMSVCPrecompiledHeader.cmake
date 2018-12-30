@@ -1,4 +1,4 @@
-macro(ADD_MSVC_PRECOMPILED_HEADER PrecompiledHeader PrecompiledSource ProjectName)
+macro(ADD_MSVC_PRECOMPILED_HEADER ProjectName PrecompiledHeader PrecompiledSource)
   if(MSVC)
      get_filename_component(PrecompiledBasename ${PrecompiledHeader} NAME_WE)
      set(PrecompiledBinary "${CMAKE_CURRENT_BINARY_DIR}/${PrecompiledBasename}.pch")
